@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+    const rps = ['rock', 'paper', 'scissors'];
+    const x = (playerSelection())
+
+    function getComputerChoice() {
+        return rps[Math.floor(Math.random()*rps.length)*1];
+    }
+
+    function playerSelection() {
+        return prompt("Enter your move");
+        let text;
+    }
+
+    function userMove() {
+        return (x);
+    }
+
+    function playRound() {
+        if (getComputerChoice() == (x)) {
+            return 'Tie!'
+        } else if (getComputerChoice() == 'rock' && (x)== 'scissors') {
+           return 'Lose!'
+        } else if (getComputerChoice() == 'scissors' && (x)== 'paper') {
+           return 'Lose!'
+        } else if (getComputerChoice() == 'paper' && (x)== 'rock') {
+           return 'Lose!'
+        } else if (getComputerChoice() == 'scissors' && (x)== 'rock') {
+           return 'Win!'
+        } else if (getComputerChoice() == 'paper' && (x)== 'scissors') {
+           return 'Win!'
+        } else if (getComputerChoice() == 'rock' && (x)== 'paper') {
+           return 'Win!' 
+        } else {
+            return 'Invalid selection'
+        }
+
+    function game() {
+        
+
+    }
+
+    }
+
+    console.log(playRound())
+    
+    /*
+        document. write(playRound())*/
+    </script>
+</body>
+</html>
